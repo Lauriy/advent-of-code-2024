@@ -5,7 +5,7 @@ python3.12 -m venv .venv
 source .venv/bin/activate  # . .\.venv\Scripts\activate on Windows
 pip install --upgrade setuptools pip wheel
 pip install -r requirements.txt
-pytest
+pytest -s
 ```
 
 # Previous years
