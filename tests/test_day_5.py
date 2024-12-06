@@ -7,7 +7,7 @@ def test_solve_first_example():
 
 def test_solve_first():
     result = solve_first('in/day_5.txt')
-    print(f"Day 5, part 1: {result}")
+    print(f"\nDay 5, part 1 solution: {result}")
     assert result == 4872
 
 
@@ -17,6 +17,6 @@ def test_solve_second_example():
 
 def test_solve_second():
     result = solve_second('in/day_5.txt')
-    print(f"Day 5, part 2: {result}")
+    print(f"\nDay 5, part 2 solution: {result}")
     assert result == 5564
     
