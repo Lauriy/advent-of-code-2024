@@ -1,0 +1,30 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.pytestPath": "uv",
+    "python.testing.cwd": "${workspaceFolder}",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "always",
+            "source.organizeImports": "always"
+        }
+    },
+    "ruff.enable": true,
+    "ruff.importStrategy": "fromEnvironment",
+    "ruff.organizeImports": true,
+    "ruff.fixAll": true,
+    "ruff.lint.args": [
+        "--config=${workspaceFolder}/pyproject.toml",
+        "--unsafe-fixes"
+    ],
+    "ruff.format.args": [
+        "--config=${workspaceFolder}/pyproject.toml"
+    ]
+}
