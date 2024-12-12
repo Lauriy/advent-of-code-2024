@@ -9,12 +9,12 @@
     "python.testing.pytestPath": "uv",
     "python.testing.cwd": "${workspaceFolder}",
     "[python]": {
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "always",
-            "source.organizeImports": "always"
-        }
+        //"editor.codeActionsOnSave": {
+        //    "source.fixAll": "always",
+        //    "source.organizeImports": "always"
+        //}
     },
     "ruff.enable": true,
     "ruff.importStrategy": "fromEnvironment",
