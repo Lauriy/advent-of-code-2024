@@ -44,13 +44,7 @@ def solve_first(filename: str) -> int:
     input_path = Path(__file__).parent.parent / "in" / filename
     locks, keys = read_schematics(input_path)
 
-    return sum(
-        1
-        for lock in locks
-        for key in keys
-        if can_fit(lock, key)
-    )
-
+    return sum(1 for lock in locks for key in keys if can_fit(lock, key))
 
 
 def solve_second(filename: str) -> str:

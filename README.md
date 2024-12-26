@@ -16,6 +16,7 @@ uv run pytest # -n 8 or smth to run the whole suite faster
 
 # Linting
 ```shell
+ruff format .
 ruff check --fix --unsafe-fixes .
 ```
 
