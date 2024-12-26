@@ -1,12 +1,22 @@
 # AoC 2024
 
 # Setup
-```python
+```shell
 python3.12 -m venv .venv
 source .venv/bin/activate  # . .\.venv\Scripts\activate on Windows
 pip install --upgrade setuptools pip wheel uv
 uv sync
+```
+
+# Tests (get answers)
+
+```shell
 uv run pytest # -n 8 or smth to run the whole suite faster
+```
+
+# Linting
+```shell
+ruff check --fix --unsafe-fixes .
 ```
 
 # Previous years
